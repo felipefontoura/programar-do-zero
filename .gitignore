@@ -1,0 +1,40 @@
+# Jekyll specific files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
+# Ruby environment
+.ruby-version
+.ruby-gemset
+
+# Temporary files
+*.swp
+*~
+.DS_Store
+.Thumbs.db
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Build files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+/vendor/bundle/
+

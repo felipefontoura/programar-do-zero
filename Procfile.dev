@@ -1,0 +1,2 @@
+web: bundle exec jekyll serve
+tailwind: npm run dev
