@@ -2,6 +2,7 @@
 
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.0+-red.svg)](https://jekyllrb.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Stimulus](https://img.shields.io/badge/Stimulus-3.0+-77E8B9?logo=hotwire&logoColor=white)](https://stimulus.hotwired.dev/)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/felipefontoura/programar-do-zero/build-deploy.yml?branch=stable&label=build)](https://github.com/felipefontoura/programar-do-zero/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,6 +12,7 @@ Programar do Zero website.
 
 - Static site generation with Jekyll
 - Modern UI with Tailwind CSS v4
+- Interactive UI components with Stimulus.js
 - Optimized production builds with minified assets
 - Development environment with live reloading
 
@@ -18,8 +20,10 @@ Programar do Zero website.
 
 - [Jekyll](https://jekyllrb.com/) - Static site generator
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Stimulus.js](https://stimulus.hotwired.dev/) - JavaScript framework for HTML-driven interfaces
 - [Node.js](https://nodejs.org/) - JavaScript runtime for build tools
 - [Foreman](https://github.com/ddollar/foreman) - Process manager for development
+- [esbuild](https://esbuild.github.io/) - JavaScript bundler
 
 ## 📋 Prerequisites
 
@@ -61,6 +65,7 @@ This will:
 
 - Start Jekyll server with live reloading
 - Watch and compile Tailwind CSS changes
+- Bundle JavaScript with Stimulus controllers
 
 Visit `http://localhost:4000` to see your site.
 
@@ -80,10 +85,15 @@ programar-do-zero/
 │   │   ├── main.css           # Development CSS
 │   │   └── main.min.css       # Production CSS (minified)
 │   ├── js/             # JavaScript files
+│   │   ├── controllers/       # Stimulus controllers
+│   │   ├── main.js            # Main JavaScript entry point
+│   │   ├── main.bundle.js     # Development JS bundle
+│   │   └── main.bundle.min.js # Production JS bundle (minified)
 │   └── images/         # Image files
 ├── _config.yml         # Jekyll configuration
 ├── package.json        # Node.js dependencies
 ├── Procfile.dev        # Development processes
+├── build.sh            # Production build script
 ```
 
 ## 🤝 Contributing
