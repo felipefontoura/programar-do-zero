@@ -14,5 +14,11 @@
   </head>
   <body>
     {{ content }}
+
+    {% if jekyll.environment == "production" %}
+    <script src="{{ "/assets/js/bundle.min.js" | relative_url }}"></script>
+    {% else %}
+    <script src="{{ "/assets/js/bundle.js" | relative_url }}"></script>
+    {% endif %}
   </body>
 </html>

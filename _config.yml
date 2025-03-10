@@ -1,6 +1,6 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Programar do Zero"
+url: "https://programardozero.com.br"
+baseurl: ""
 
 plugins:
   - jekyll-sitemap
@@ -13,3 +13,5 @@ exclude:
   - package.json
   - package-lock.json
   - assets/css/main.tailwind.css
+  - assets/js/controllers
+  - assets/js/main.js

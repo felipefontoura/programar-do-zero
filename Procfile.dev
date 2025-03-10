@@ -1,2 +1,3 @@
 web: bundle exec jekyll serve
-tailwind: npm run dev
+css: npm run dev:css
+js: npm run dev:js
