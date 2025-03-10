@@ -1,109 +1,117 @@
-# Programar do Zero
+# Programar do Zero 🇧🇷
 
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.0+-red.svg)](https://jekyllrb.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Stimulus](https://img.shields.io/badge/Stimulus-3.0+-77E8B9?logo=hotwire&logoColor=white)](https://stimulus.hotwired.dev/)
+[![esbuild](https://img.shields.io/badge/esbuild-0.19+-FFCF00?logo=esbuild&logoColor=black)](https://esbuild.github.io/)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/felipefontoura/programar-do-zero/build-deploy.yml?branch=stable&label=build)](https://github.com/felipefontoura/programar-do-zero/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-009c3b?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNTA0IiB2aWV3Qm94PSIwIDAgNzIwIDUwNCI+PHBhdGggZmlsbD0iIzAwOTkzYiIgZD0iTTAgMGg3MjB2NTA0SDB6Ii8+PHBhdGggZmlsbD0iI2ZlZGUwMCIgZD0iTTM2MCAyNTJMMTIwIDQ1Nmg0ODBMMzYwIDUyeiIvPjxjaXJjbGUgY3g9IjM2MCIgY3k9IjI1MiIgcj0iODUiIGZpbGw9IiMwMDI3NzYiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzM3IDI5NGMtMjQtMTUtMjQtNDYgMC02MWE1MiA1MiAwIDAgMSA0NiAwYzI0IDE1IDI0IDQ2IDAgNjFhNTIgNTIgMCAwIDEtNDYgMHoiLz48L3N2Zz4=)](https://pt.wikipedia.org/wiki/Brasil)
+Onde o código liberta mentes e os sonhos ganham asas. 🚀
 
-Programar do Zero website.
+> *"Feito com ☕ café, </> código e paixão pela tecnologia brasileira."*
 
-## 🚀 Features
+## 🚀 Funcionalidades
 
-- Static site generation with Jekyll
-- Modern UI with Tailwind CSS v4
-- Interactive UI components with Stimulus.js
-- Optimized production builds with minified assets
-- Development environment with live reloading
+- Geração de site estático com Jekyll
+- Interface moderna com Tailwind CSS v4
+- Componentes interativos com Stimulus.js
+- Builds otimizados para produção com assets minificados
+- Ambiente de desenvolvimento com recarregamento automático
 
-## 🛠️ Tech Stack
+## 🛠️ Stack Tecnológica
 
-- [Jekyll](https://jekyllrb.com/) - Static site generator
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Stimulus.js](https://stimulus.hotwired.dev/) - JavaScript framework for HTML-driven interfaces
-- [Node.js](https://nodejs.org/) - JavaScript runtime for build tools
-- [Foreman](https://github.com/ddollar/foreman) - Process manager for development
-- [esbuild](https://esbuild.github.io/) - JavaScript bundler
+- [Jekyll](https://jekyllrb.com/) - Gerador de sites estáticos
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
+- [Stimulus.js](https://stimulus.hotwired.dev/) - Framework JavaScript para interfaces orientadas a HTML
+- [Node.js](https://nodejs.org/) - Runtime JavaScript para ferramentas de build
+- [Foreman](https://github.com/ddollar/foreman) - Gerenciador de processos para desenvolvimento
+- [esbuild](https://esbuild.github.io/) - Empacotador JavaScript
 
-## 📋 Prerequisites
+## 📋 Pré-requisitos
 
 - Ruby 2.7+
 - Node.js 14+
 - Bundler
 - npm
 
-## 🔧 Installation
+## 🔧 Instalação
 
-1. Clone the repository
+1. Clone o repositório
 
    ```bash
    git clone https://github.com/yourusername/programar-do-zero.git
    cd programar-do-zero
    ```
 
-2. Install Ruby dependencies
+2. Instale as dependências Ruby
 
    ```bash
    bundle install
    ```
 
-3. Install Node.js dependencies
+3. Instale as dependências Node.js
 
    ```bash
    npm install
    ```
 
-## 💻 Development
+## 💻 Desenvolvimento
 
-Start the development server with:
+Inicie o servidor de desenvolvimento com:
 
 ```bash
 foreman start -f Procfile.dev
 ```
 
-This will:
+Isso irá:
 
-- Start Jekyll server with live reloading
-- Watch and compile Tailwind CSS changes
-- Bundle JavaScript with Stimulus controllers
+- Iniciar o servidor Jekyll com recarregamento automático
+- Observar e compilar alterações no Tailwind CSS
+- Empacotar JavaScript com controladores Stimulus
 
-Visit `http://localhost:4000` to see your site.
+Acesse `http://localhost:4000` para ver seu site.
 
-## 🌐 Deployment
+## 🌐 Implantação
 
-The site is automatically deployed via GitHub Actions when changes are pushed to the `stable` branch.
+O site é automaticamente implantado via GitHub Actions quando mudanças são enviadas para a branch `stable`.
 
-## 📁 Project Structure
+## 📁 Estrutura do Projeto
 
 ```text
 programar-do-zero/
-├── _layouts/           # Layout templates
-├── _includes/          # Reusable components
+├── _layouts/           # Templates de layout
+├── _includes/          # Componentes reutilizáveis
 ├── assets/
-│   ├── css/            # CSS files
-│   │   ├── main.tailwind.css  # Tailwind source
-│   │   ├── main.css           # Development CSS
-│   │   └── main.min.css       # Production CSS (minified)
-│   ├── js/             # JavaScript files
-│   │   ├── controllers/       # Stimulus controllers
-│   │   ├── main.js            # Main JavaScript entry point
-│   │   ├── main.bundle.js     # Development JS bundle
-│   │   └── main.bundle.min.js # Production JS bundle (minified)
-│   └── images/         # Image files
-├── _config.yml         # Jekyll configuration
-├── package.json        # Node.js dependencies
-├── Procfile.dev        # Development processes
-├── build.sh            # Production build script
+│   ├── css/            # Arquivos CSS
+│   │   ├── main.tailwind.css  # Fonte do Tailwind
+│   │   ├── main.css           # CSS de desenvolvimento
+│   │   └── main.min.css       # CSS de produção (minificado)
+│   ├── js/             # Arquivos JavaScript
+│   │   ├── controllers/       # Controladores Stimulus
+│   │   ├── main.js            # Ponto de entrada principal do JavaScript
+│   │   ├── main.bundle.js     # Bundle JS de desenvolvimento
+│   │   └── main.bundle.min.js # Bundle JS de produção (minificado)
+│   └── images/         # Arquivos de imagem
+├── _config.yml         # Configuração do Jekyll
+├── package.json        # Dependências Node.js
+├── Procfile.dev        # Processos de desenvolvimento
+├── build.sh            # Script de build para produção
 ```
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Faça um fork do repositório
+2. Crie sua branch de feature (`git checkout -b feature/recurso-incrivel`)
+3. Faça commit das suas alterações (`git commit -m 'Adiciona algum recurso incrível'`)
+4. Envie para a branch (`git push origin feature/recurso-incrivel`)
 
-## 📄 License
+## 📄 Licença
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="30">
+  Orgulhosamente desenvolvido no Brasil
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="30">
+</p>
