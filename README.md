@@ -7,6 +7,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/felipefontoura/programar-do-zero/build-deploy.yml?branch=stable&label=build)](https://github.com/felipefontoura/programar-do-zero/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-009c3b?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNTA0IiB2aWV3Qm94PSIwIDAgNzIwIDUwNCI+PHBhdGggZmlsbD0iIzAwOTkzYiIgZD0iTTAgMGg3MjB2NTA0SDB6Ii8+PHBhdGggZmlsbD0iI2ZlZGUwMCIgZD0iTTM2MCAyNTJMMTIwIDQ1Nmg0ODBMMzYwIDUyeiIvPjxjaXJjbGUgY3g9IjM2MCIgY3k9IjI1MiIgcj0iODUiIGZpbGw9IiMwMDI3NzYiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzM3IDI5NGMtMjQtMTUtMjQtNDYgMC02MWE1MiA1MiAwIDAgMSA0NiAwYzI0IDE1IDI0IDQ2IDAgNjFhNTIgNTIgMCAwIDEtNDYgMHoiLz48L3N2Zz4=)](https://pt.wikipedia.org/wiki/Brasil)
+
 Onde o código liberta mentes e os sonhos ganham asas. 🚀
 
 > *"Feito com ☕ café, </> código e paixão pela tecnologia brasileira."*
