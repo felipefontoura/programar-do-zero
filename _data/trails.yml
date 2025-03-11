@@ -1,0 +1,88 @@
+- id: fundamentos
+  name: Fundamentos
+  excerpt: Primeiros passos na programação, conceitos básicos de computação e ferramentas essenciais para iniciar sua jornada.
+  icon: book-open
+  courses:
+    - introducao-programacao
+    - logica-algoritmos
+    - git-github
+
+- id: logica-de-programacao
+  name: Lógica de Programação
+  excerpt: Aprenda a pensar como um programador, desenvolva algoritmos e resolva problemas de forma estruturada.
+  icon: brain
+  courses:
+    - algoritmos-basicos
+    - estruturas-dados
+    - resolucao-problemas
+
+- id: desenvolvimento-front-end
+  name: Desenvolvimento Front-end
+  excerpt: Crie interfaces interativas para websites usando HTML, CSS, JavaScript e frameworks modernos.
+  icon: layout
+  courses:
+    - html-css-fundamentos
+    - javascript-basico
+    - javascript-avancado
+    - react-fundamentos
+    - react-avancado
+
+- id: desenvolvimento-back-end
+  name: Desenvolvimento Back-end
+  excerpt: Construa a parte invisível das aplicações, trabalhando com servidores, bancos de dados e APIs.
+  icon: server
+  courses:
+    - nodejs-fundamentos
+    - apis-rest
+    - bancos-dados-relacionais
+    - bancos-dados-nosql
+    - autenticacao-seguranca
+
+- id: desenvolvimento-fullstack
+  name: Desenvolvimento FullStack
+  excerpt: Domine tanto o Front-end quanto o Back-end, tornando-se um desenvolvedor completo capaz de construir aplicações web do início ao fim.
+  icon: layers
+  courses:
+    - aplicacoes-fullstack
+    - arquitetura-software
+    - deploy-aplicacoes
+    - testes-automatizados
+
+- id: desenvolvimento-mobile
+  name: Desenvolvimento Mobile
+  excerpt: Desenvolva aplicativos para dispositivos móveis usando tecnologias nativas e multiplataforma.
+  icon: smartphone
+  courses:
+    - react-native-fundamentos
+    - react-native-avancado
+    - flutter-fundamentos
+
+- id: devops-e-infraestrutura
+  name: DevOps e Infraestrutura
+  excerpt: Automatize processos de desenvolvimento, implantação e gerenciamento de infraestrutura em nuvem.
+  icon: cloud
+  courses:
+    - git-github-avancado
+    - docker-fundamentos
+    - ci-cd
+    - aws-fundamentos
+
+- id: desenvolvimento-de-carreira-em-ti
+  name: Desenvolvimento de Carreira em TI
+  excerpt: Prepare-se para o mercado de trabalho com habilidades profissionais, portfólio e estratégias para entrevistas.
+  icon: briefcase
+  courses:
+    - portfolio-dev
+    - entrevistas-tecnicas
+    - linkedin-networking
+    - freelancing
+
+- id: masterclasses
+  name: Masterclasses
+  excerpt: Aulas especiais com especialistas da indústria abordando tópicos avançados, tendências de mercado e técnicas profissionais para aprimorar suas habilidades.
+  icon: star
+  courses:
+    - arquitetura-software-avancada
+    - performance-web
+    - seguranca-aplicacoes
+    - ia-desenvolvimento
