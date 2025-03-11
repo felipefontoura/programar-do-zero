@@ -100,6 +100,28 @@ programar-do-zero/
 ├── build.sh            # Script de build para produção
 ```
 
+## TODO
+
+### Páginas
+
+- [ ] Home
+- [ ] Formações, Trilhas, Cursos e Aulas
+- [ ] Compartilhar
+- [ ] Depoimentos
+- [ ] Comunidade (Discord)
+- [ ] Doação para entidades carentes
+- [ ] Colaboradores
+
+### Progresso
+
+- [ ] Marcar como concluído
+
+### Certificado
+
+- [ ] Geração de Certificado
+- [ ] QR Code / conferência
+- [ ] Compartilhar no LinkedIn
+
 ## 🤝 Contribuindo
 
 1. Faça um fork do repositório
