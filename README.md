@@ -105,6 +105,13 @@ programar-do-zero/
 - [ ] ✨ Logotipo
 - [ ] 🖼️ Banners e Redes Sociais
 
+### ⚖️ Jurídico
+
+- [ ] 🔒 LGPD
+- [ ] 📤 Política de Compartilhamento
+- [ ] 🛡️ Política de Privacidade
+- [ ] 📝 Termos de Uso
+
 ### 📄 Páginas
 
 - [ ] 🏠 Home
