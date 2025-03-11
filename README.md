@@ -116,6 +116,7 @@ programar-do-zero/
 
 - [ ] 🏠 Home
 - [ ] 🧠 Formações, Trilhas, Cursos e Aulas
+- [ ] 📝 Quiz
 - [ ] 🔄 Compartilhar
 - [ ] 💬 Depoimentos
 - [ ] 👥 Comunidade (Discord)
