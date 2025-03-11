@@ -1,4 +1,4 @@
-# Programar do Zero 🇧🇷
+# Programar do Zero - plataforma de cursos
 
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.0+-red.svg)](https://jekyllrb.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
@@ -6,11 +6,8 @@
 [![esbuild](https://img.shields.io/badge/esbuild-0.19+-FFCF00?logo=esbuild&logoColor=black)](https://esbuild.github.io/)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/felipefontoura/programar-do-zero/build-deploy.yml?branch=stable&label=build)](https://github.com/felipefontoura/programar-do-zero/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-009c3b?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNTA0IiB2aWV3Qm94PSIwIDAgNzIwIDUwNCI+PHBhdGggZmlsbD0iIzAwOTkzYiIgZD0iTTAgMGg3MjB2NTA0SDB6Ii8+PHBhdGggZmlsbD0iI2ZlZGUwMCIgZD0iTTM2MCAyNTJMMTIwIDQ1Nmg0ODBMMzYwIDUyeiIvPjxjaXJjbGUgY3g9IjM2MCIgY3k9IjI1MiIgcj0iODUiIGZpbGw9IiMwMDI3NzYiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzM3IDI5NGMtMjQtMTUtMjQtNDYgMC02MWE1MiA1MiAwIDAgMSA0NiAwYzI0IDE1IDI0IDQ2IDAgNjFhNTIgNTIgMCAwIDEtNDYgMHoiLz48L3N2Zz4=)](https://pt.wikipedia.org/wiki/Brasil)
 
-Onde o código liberta mentes e os sonhos ganham asas. 🚀
-
-> *"Feito com ☕ café, </> código e paixão pela tecnologia brasileira."*
+> Onde o código liberta mentes e os sonhos ganham asas. 🚀
 
 ## 🚀 Funcionalidades
 
@@ -139,8 +136,4 @@ programar-do-zero/
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="30">
-  Orgulhosamente desenvolvido no Brasil
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="30">
-</p>
+*"Feito com ☕ café, </> código e paixão pela tecnologia brasileira."*
