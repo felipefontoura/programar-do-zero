@@ -100,27 +100,33 @@ programar-do-zero/
 ├── build.sh            # Script de build para produção
 ```
 
-## TODO
+## ✅ TODO
 
-### Páginas
+### 🎨 Design
 
-- [ ] Home
-- [ ] Formações, Trilhas, Cursos e Aulas
-- [ ] Compartilhar
-- [ ] Depoimentos
-- [ ] Comunidade (Discord)
-- [ ] Doação para entidades carentes
-- [ ] Colaboradores
+- [ ] 🖌️ Identidade Visual
+- [ ] ✨ Logotipo
+- [ ] 🖼️ Banners e Redes Sociais
 
-### Progresso
+### 📄 Páginas
 
-- [ ] Marcar como concluído
+- [ ] 🏠 Home
+- [ ] 🧠 Formações, Trilhas, Cursos e Aulas
+- [ ] 🔄 Compartilhar
+- [ ] 💬 Depoimentos
+- [ ] 👥 Comunidade (Discord)
+- [ ] 🎁 Doação para entidades carentes
+- [ ] 👨‍💻 Colaboradores
 
-### Certificado
+### 📊 Progresso
 
-- [ ] Geração de Certificado
-- [ ] QR Code / conferência
-- [ ] Compartilhar no LinkedIn
+- [ ] ✓ Marcar como concluído
+
+### 🎓 Certificado
+
+- [ ] 📜 Geração de Certificado
+- [ ] 📱 QR Code / conferência
+- [ ] 🔗 Compartilhar no LinkedIn
 
 ## 🤝 Contribuindo
 
