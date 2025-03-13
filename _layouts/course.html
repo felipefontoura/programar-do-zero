@@ -1,0 +1,73 @@
+---
+layout: base
+---
+
+<div class="container mx-auto px-4 py-8">
+  {% assign course_data = page %}
+  
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-3">{{ course_data.title }}</h1>
+    <p class="text-lg text-gray-600">{{ course_data.excerpt }}</p>
+    
+    <div class="mt-4 flex items-center text-gray-500">
+      <span class="mr-4">
+        <span class="font-medium">Duração:</span> {{ course_data.duration }} semanas
+      </span>
+      <span class="mr-4">
+        <span class="font-medium">Nível:</span> 
+        {% case course_data.level %}
+          {% when 'beginner' %}Iniciante
+          {% when 'intermediate' %}Intermediário
+          {% when 'advanced' %}Avançado
+        {% endcase %}
+      </span>
+    </div>
+  </header>
+
+  <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Conteúdo do Curso</h2>
+    
+    <div class="course-modules">
+      {% for module in course_data.modules %}
+        <div class="module mb-8">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">
+            Módulo {{ forloop.index }}: {{ module.title }}
+          </h3>
+          
+          <ul class="lessons-list">
+            {% for lesson_id in module.lessons %}
+              {% assign lesson_path = page.id | append: '/' | append: lesson_id %}
+              <li class="p-3 rounded hover:bg-gray-100 transition-colors duration-200">
+                <a href="{{ site.baseurl }}/courses/{{ lesson_path }}" class="block text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                  <span class="font-medium">Aula {{ forloop.index }}:</span> 
+                  {% assign lesson_parts = lesson_id | split: '-' %}
+                  {% assign lesson_title = lesson_parts | slice: 2, lesson_parts.size | join: '-' | replace: '-', ' ' | capitalize %}
+                  {{ lesson_title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% if course_data.trails %}
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Trilhas Relacionadas</h2>
+      
+      <div class="grid gap-3 md:grid-cols-1 lg:grid-cols-2">
+        {% for trail_id in course_data.trails %}
+          {% assign trail = site.data.trails | where: "id", trail_id | first %}
+          {% if trail %}
+            <a href="{{ site.baseurl }}/trails/{{ trail.id }}" class="block p-3 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow duration-300">
+              <h3 class="font-semibold text-gray-800">{{ trail.title }}</h3>
+              <p class="text-gray-600">{{ trail.excerpt }}</p>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>
+

@@ -1,81 +1,81 @@
 - id: javascript
-  name: JavaScript
+  title: JavaScript
   icon: code
 - id: python
-  name: Python
+  title: Python
   icon: code-2
 - id: tailwind
-  name: Tailwind
+  title: Tailwind
   icon: wind
 - id: html
-  name: HTML
+  title: HTML
   icon: file-code
 - id: css
-  name: CSS
+  title: CSS
   icon: palette
 - id: react
-  name: React
+  title: React
   icon: atom
 - id: nodejs
-  name: Node.js
+  title: Node.js
   icon: server
 - id: express
-  name: Express
+  title: Express
   icon: server-cog
 - id: mongodb
-  name: MongoDB
+  title: MongoDB
   icon: database
 - id: sql
-  name: SQL
+  title: SQL
   icon: database
 - id: git
-  name: Git
+  title: Git
   icon: git-branch
 - id: github
-  name: GitHub
+  title: GitHub
   icon: github
 - id: typescript
-  name: TypeScript
+  title: TypeScript
   icon: file-type
 - id: vuejs
-  name: Vue.js
+  title: Vue.js
   icon: component
 - id: angular
-  name: Angular
+  title: Angular
   icon: circle-dot
 - id: docker
-  name: Docker
+  title: Docker
   icon: container
 - id: aws
-  name: AWS
+  title: AWS
   icon: cloud
 - id: firebase
-  name: Firebase
+  title: Firebase
   icon: flame
 - id: jest
-  name: Jest
+  title: Jest
   icon: flask-conical
 - id: ruby
-  name: Ruby
+  title: Ruby
   icon: gem
 - id: php
-  name: PHP
+  title: PHP
   icon: code
 - id: java
-  name: Java
+  title: Java
   icon: coffee
 - id: csharp
-  name: C#
+  title: C#
   icon: hash
 - id: swift
-  name: Swift
+  title: Swift
   icon: bird
 - id: kotlin
-  name: Kotlin
+  title: Kotlin
   icon: code
 - id: flutter
-  name: Flutter
+  title: Flutter
   icon: smartphone
 - id: react-native
-  name: React Native
+  title: React Native
   icon: smartphone

@@ -2,6 +2,12 @@ title: "Programar do Zero"
 url: "https://programardozero.com.br"
 baseurl: ""
 
+collections:
+  trails:
+    output: true
+  courses:
+    output: true
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed
