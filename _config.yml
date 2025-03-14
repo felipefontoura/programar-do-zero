@@ -7,11 +7,19 @@ collections:
     output: true
   courses:
     output: true
+    permalink: /courses/:path/
 
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: "courses/*/*.md"
+      type: "pages"
+    values:
+      permalink: "/courses/:path/:basename/"
 
 exclude:
   - Procfile.dev
