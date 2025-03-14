@@ -1,0 +1,37 @@
+---
+layout: base
+title: Programar do Zero
+---
+
+<div class="container mx-auto px-4 py-8">
+  <h2 class="text-3xl font-bold text-center mb-8">Welcome</h2>
+
+  <div class="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
+    {% for trail in site.data.trails %}
+      <div class="trail-section bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+        <h2 class="text-2xl font-semibold mb-3 text-gray-800">{{ trail.title }}</h2>
+        <p class="text-gray-600 mb-4">{{ trail.excerpt }}</p>
+
+        {% if trail.courses and trail.courses.size > 0 %}
+          <div class="courses-container">
+            <div class="course-list grid gap-3">
+              {% for course_id in trail.courses %}
+                {% assign course_page = site.pages | where: "id", course_id | first %}
+                {% assign course = course_page %}
+                {% if course %}
+                  <div class="course-card bg-gray-50 rounded p-3 hover:bg-gray-100 transition-colors duration-200">
+                    <a href="/courses/{{ course_id }}" class="block">
+                      <h4 class="text-lg font-medium text-blue-600 hover:text-blue-800">{{ course.title }}</h4>
+                    </a>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% else %}
+          <p class="text-gray-500 italic">Nenhum curso disponível nesta trilha ainda.</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

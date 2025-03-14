@@ -1,0 +1,142 @@
+---
+layout: base
+---
+
+<div class="container mx-auto px-4 py-8">
+  {% assign course_page = site.pages | where: "id", page.course_id | first %}
+  {% assign course_data = course_page %}
+  {% assign module_index = 0 %}
+  {% assign lesson_index = 0 %}
+  {% assign current_module = nil %}
+  
+  {% for module in course_data.modules %}
+      {% for lesson_id in module.lessons %}
+      {% assign filename = page.path | split: '/' | last | split: '.' | first %}
+      {% if lesson_id == filename %}
+        {% assign module_index = forloop.parentloop.index %}
+        {% assign lesson_index = forloop.index %}
+        {% assign current_module = module %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  
+  <div class="mb-6">
+    <a href="{{ site.baseurl }}/courses/{{ page.course_id }}" class="text-blue-600 hover:text-blue-800 flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Voltar para o curso
+    </a>
+  </div>
+  
+  <header class="mb-8">
+    <div class="text-sm text-gray-500 mb-2">
+      Módulo {{ module_index }}: {{ current_module.title }}
+    </div>
+    <h1 class="text-3xl font-bold text-gray-800 mb-3">{{ page.title }}</h1>
+    
+    <div class="flex justify-between items-center mt-4">
+      <div class="text-sm text-gray-500">
+        Aula {{ lesson_index }} de {{ current_module.lessons.size }}
+      </div>
+      
+      <div class="flex space-x-2">
+        {% assign prev_lesson = nil %}
+        {% assign next_lesson = nil %}
+        {% assign found_current = false %}
+        
+        {% for module in course_data.modules %}
+          {% for lesson_id in module.lessons %}
+            {% if found_current %}
+              {% unless next_lesson %}
+                {% assign next_lesson = lesson_id %}
+                {% assign next_module_index = forloop.parentloop.index %}
+                {% assign next_lesson_index = forloop.index %}
+              {% endunless %}
+            {% elsif lesson_id == filename %}
+              {% assign found_current = true %}
+            {% else %}
+              {% assign prev_lesson = lesson_id %}
+              {% assign prev_module_index = forloop.parentloop.index %}
+              {% assign prev_lesson_index = forloop.index %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        
+        {% if prev_lesson %}
+          <a href="{{ site.baseurl }}/courses/{{ page.course_id }}/{{ prev_lesson }}" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Anterior
+          </a>
+        {% endif %}
+        
+        {% if next_lesson %}
+          <a href="{{ site.baseurl }}/courses/{{ page.course_id }}/{{ next_lesson }}" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded text-white flex items-center">
+            Próxima
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+    {% if page.video_id %}
+    <div class="mb-6 mx-auto max-w-4xl">
+      <div class="relative" style="padding-bottom: 56.25%;">
+        <iframe 
+          src="https://www.youtube.com/embed/{{ page.video_id }}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          class="absolute top-0 left-0 w-full h-full rounded shadow"
+        ></iframe>
+      </div>
+    </div>
+    {% endif %}
+    
+    <div class="prose max-w-none">
+      {{ content }}
+    </div>
+  </div>
+  
+  <div class="mt-8 border-t pt-6">
+    <h2 class="text-xl font-semibold text-gray-800 mb-4">Navegação do Curso</h2>
+    
+    <div class="course-modules">
+      {% for module in course_data.modules %}
+        <div class="module mb-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">
+            Módulo {{ forloop.index }}: {{ module.title }}
+          </h3>
+          
+          <ul class="lessons-list">
+            {% for lesson_id in module.lessons %}
+              {% assign is_current = false %}
+              {% assign filename = page.path | split: '/' | last | split: '.' | first %}
+              {% if lesson_id == filename %}
+                {% assign is_current = true %}
+              {% endif %}
+              <li class="p-2 rounded {% if is_current %}bg-blue-100{% else %}hover:bg-gray-100{% endif %} transition-colors duration-200">
+                <a href="{{ site.baseurl }}/courses/{{ page.course_id }}/{{ lesson_id }}" 
+                   class="block {% if is_current %}text-blue-800 font-medium{% else %}text-blue-600 hover:text-blue-800{% endif %} transition-colors duration-200">
+                  <span class="font-medium">Aula {{ forloop.index }}:</span> 
+                  {% assign lesson_parts = lesson_id | split: '-' %}
+                  {% assign module_num = lesson_parts[0] %}
+                  {% assign lesson_num = lesson_parts[1] %}
+                  {% assign lesson_title = lesson_parts | slice: 2, lesson_parts.size | join: ' ' | capitalize %}
+                  {{ lesson_title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+

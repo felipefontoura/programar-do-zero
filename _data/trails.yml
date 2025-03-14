@@ -1,0 +1,50 @@
+- id: fundamentos
+  title: Fundamentos
+  excerpt: Primeiros passos na programação, conceitos básicos de computação e ferramentas essenciais para iniciar sua jornada.
+  icon: book-open
+  courses:
+    - logica-de-programacao
+    - projeto-ping-pong
+
+- id: desenvolvimento-front-end
+  title: Desenvolvimento Front-end
+  excerpt: Crie interfaces interativas para websites usando HTML, CSS, JavaScript e frameworks modernos.
+  icon: layout
+  courses:
+    - curso-javascript
+
+- id: desenvolvimento-back-end
+  title: Desenvolvimento Back-end
+  excerpt: Construa a parte invisível das aplicações, trabalhando com servidores, bancos de dados e APIs.
+  icon: server
+  courses:
+
+- id: desenvolvimento-fullstack
+  title: Desenvolvimento FullStack
+  excerpt: Domine tanto o Front-end quanto o Back-end, tornando-se um desenvolvedor completo capaz de construir aplicações web do início ao fim.
+  icon: layers
+  courses:
+
+- id: desenvolvimento-mobile
+  title: Desenvolvimento Mobile
+  excerpt: Desenvolva aplicativos para dispositivos móveis usando tecnologias nativas e multiplataforma.
+  icon: smartphone
+  courses:
+
+- id: devops-e-infraestrutura
+  title: DevOps e Infraestrutura
+  excerpt: Automatize processos de desenvolvimento, implantação e gerenciamento de infraestrutura em nuvem.
+  icon: cloud
+  courses:
+
+- id: desenvolvimento-de-carreira-em-ti
+  title: Desenvolvimento de Carreira em TI
+  excerpt: Prepare-se para o mercado de trabalho com habilidades profissionais, portfólio e estratégias para entrevistas.
+  icon: briefcase
+  courses:
+
+- id: masterclasses
+  title: Masterclasses
+  excerpt: Aulas especiais com especialistas da indústria abordando tópicos avançados, tendências de mercado e técnicas profissionais para aprimorar suas habilidades.
+  icon: star
+  courses:
