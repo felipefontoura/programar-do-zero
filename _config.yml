@@ -19,7 +19,7 @@ defaults:
       path: "courses/*/*.md"
       type: "pages"
     values:
-      permalink: "/courses/:path/:basename/"
+      permalink: "/courses/:path/:id/"
 
 exclude:
   - Procfile.dev
