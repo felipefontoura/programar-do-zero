@@ -14,13 +14,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-defaults:
-  - scope:
-      path: "courses/*/*.md"
-      type: "pages"
-    values:
-      permalink: "/courses/:path/:id/"
-
 exclude:
   - Procfile.dev
   - node_modules

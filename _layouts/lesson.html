@@ -10,8 +10,9 @@ layout: base
   {% assign current_module = nil %}
   
   {% for module in course_data.modules %}
-    {% for lesson_id in module.lessons %}
-      {% if lesson_id == page.id %}
+      {% for lesson_id in module.lessons %}
+      {% assign filename = page.path | split: '/' | last | split: '.' | first %}
+      {% if lesson_id == filename %}
         {% assign module_index = forloop.parentloop.index %}
         {% assign lesson_index = forloop.index %}
         {% assign current_module = module %}
@@ -52,7 +53,7 @@ layout: base
                 {% assign next_module_index = forloop.parentloop.index %}
                 {% assign next_lesson_index = forloop.index %}
               {% endunless %}
-            {% elsif lesson_id == page.id %}
+            {% elsif lesson_id == filename %}
               {% assign found_current = true %}
             {% else %}
               {% assign prev_lesson = lesson_id %}
@@ -116,7 +117,8 @@ layout: base
           <ul class="lessons-list">
             {% for lesson_id in module.lessons %}
               {% assign is_current = false %}
-              {% if lesson_id == page.id %}
+              {% assign filename = page.path | split: '/' | last | split: '.' | first %}
+              {% if lesson_id == filename %}
                 {% assign is_current = true %}
               {% endif %}
               <li class="p-2 rounded {% if is_current %}bg-blue-100{% else %}hover:bg-gray-100{% endif %} transition-colors duration-200">
@@ -124,7 +126,9 @@ layout: base
                    class="block {% if is_current %}text-blue-800 font-medium{% else %}text-blue-600 hover:text-blue-800{% endif %} transition-colors duration-200">
                   <span class="font-medium">Aula {{ forloop.index }}:</span> 
                   {% assign lesson_parts = lesson_id | split: '-' %}
-                  {% assign lesson_title = lesson_parts | slice: 2, lesson_parts.size | join: '-' | replace: '-', ' ' | capitalize %}
+                  {% assign module_num = lesson_parts[0] %}
+                  {% assign lesson_num = lesson_parts[1] %}
+                  {% assign lesson_title = lesson_parts | slice: 2, lesson_parts.size | join: ' ' | capitalize %}
                   {{ lesson_title }}
                 </a>
               </li>
